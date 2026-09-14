@@ -15,8 +15,23 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden parchment-bg">
+      {/* Background Image */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <motion.img 
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 0.15, scale: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+          src="/images/bac-ho-cua-chung-ta.jpg" 
+          alt="Bác Hồ" 
+          className="w-full h-full object-cover object-center"
+          style={{ mixBlendMode: 'multiply', filter: 'grayscale(30%) sepia(40%)' }}
+        />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-parchment/30 to-parchment-light/90" />
+      </div>
+
       {/* Decorative border */}
-      <div className="absolute inset-4 md:inset-8 border-2 border-sepia/20 rounded-lg pointer-events-none" />
+      <div className="absolute inset-4 md:inset-8 border-2 border-sepia/20 rounded-lg pointer-events-none z-10" />
       
       {/* Corner ornaments */}
       {['top-6 left-6', 'top-6 right-6', 'bottom-6 left-6', 'bottom-6 right-6'].map((pos, i) => (
