@@ -3,7 +3,7 @@ import HeroSection from './components/HeroSection';
 import StationOverview from './components/StationOverview';
 import HistoricalStation from './components/HistoricalStation';
 import JourneyMap from './components/JourneyMap';
-import { QuestQuiz } from './components/QuestQuiz';
+import GameHub from './components/GameHub';
 import { AiIntegrityAppendix } from './components/AiIntegrityAppendix';
 
 export default function App() {
@@ -33,10 +33,10 @@ export default function App() {
         ))}
       </div>
 
-      {/* Section 4: Interactive Quiz Game */}
-      <section id="quest-quiz" className="py-16 md:py-24 px-4 md:px-8 bg-parchment-dark/30">
+      {/* Section 4: Game Hub */}
+      <section id="game-hub" className="py-16 md:py-24 px-4 md:px-8 bg-parchment-dark/30">
         <div className="max-w-4xl mx-auto">
-          <QuestQuiz />
+          <GameHub />
         </div>
       </section>
 
