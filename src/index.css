@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-parchment: #F5E6C8;
+  --color-parchment-light: #FAF3E3;
+  --color-parchment-dark: #E8D5B0;
+  --color-sepia: #704214;
+  --color-sepia-light: #8B5E3C;
+  --color-ink: #2C1810;
+  --color-ink-light: #4A3728;
+  --color-gold: #C9A84C;
+  --color-gold-dark: #A08030;
+  --color-accent-red: #8B2500;
+  --color-cream: #FFF8EE;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Lora', serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-parchment-light);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  background-image: 
+    radial-gradient(circle at center, transparent 0%, rgba(200, 180, 150, 0.1) 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* Parchment background */
+.parchment-bg {
+  background-color: var(--color-parchment);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(201, 168, 76, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(139, 94, 60, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 50% 50%, transparent 50%, rgba(112, 66, 20, 0.05) 100%);
+  box-shadow: inset 0 0 40px rgba(112, 66, 20, 0.1);
+}
+
+/* Station card */
+.station-card {
+  background-color: var(--color-parchment);
+  border: 1px solid rgba(139, 94, 60, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(112, 66, 20, 0.1), 0 2px 4px -1px rgba(112, 66, 20, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.station-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(112, 66, 20, 0.15), 0 4px 6px -2px rgba(112, 66, 20, 0.1);
+}
+
+/* Route line */
+.route-line {
+  border-left: 3px dashed var(--color-gold);
+}
+
+/* Compass rose */
+.compass-rose {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.compass-rose::before, .compass-rose::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-gold);
+  clip-path: polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%);
+}
+.compass-rose::after {
+  transform: rotate(45deg) scale(0.7);
+  background-color: var(--color-sepia);
+}
+
+/* Flip card styles */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-parchment-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sepia);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(201, 168, 76, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(201, 168, 76, 0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-draw-line {
+  animation: drawLine 1.5s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Utility classes */
+.text-shadow-vintage {
+  text-shadow: 1px 1px 2px rgba(112, 66, 20, 0.3);
+}
+
+.border-vintage {
+  border: 1px solid var(--color-sepia-light);
+  border-radius: 2px;
+}
+
+.gradient-parchment {
+  background: linear-gradient(to right, var(--color-parchment), var(--color-parchment-light));
+}
