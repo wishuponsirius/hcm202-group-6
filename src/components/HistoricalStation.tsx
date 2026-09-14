@@ -1,33 +1,10 @@
 import { motion } from 'framer-motion';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import type { Station } from '../data/stations';
-import { SourceReferences } from './SourceReferences';
 import ClickableImage from './ClickableImage';
-import FlipCard from './FlipCard';
-import DocumentViewer from './DocumentViewer';
-import NetworkDiagram from './NetworkDiagram';
-import DebateSimulation from './DebateSimulation';
-import { AspirationWall } from './AspirationWall';
 
 interface HistoricalStationProps {
   station: Station;
-}
-
-function InteractiveFeature({ station }: { station: Station }) {
-  switch (station.interactiveType) {
-    case 'flip-cards':
-      return <FlipCard />;
-    case 'document-viewer':
-      return <DocumentViewer images={station.images} />;
-    case 'network-diagram':
-      return <NetworkDiagram />;
-    case 'debate-simulation':
-      return <DebateSimulation />;
-    case 'aspiration-wall':
-      return <AspirationWall />;
-    default:
-      return null;
-  }
 }
 
 export default function HistoricalStation({ station }: HistoricalStationProps) {
@@ -114,7 +91,6 @@ export default function HistoricalStation({ station }: HistoricalStationProps) {
                   ))}
                 </ul>
               </div>
-              <SourceReferences sources={station.sources} />
             </motion.div>
 
             {/* Theoretical analysis */}
@@ -183,14 +159,7 @@ export default function HistoricalStation({ station }: HistoricalStationProps) {
           </motion.div>
         )}
 
-        {/* Interactive feature */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.7 }}
-        >
-          <InteractiveFeature station={station} />
-        </motion.div>
+
 
         {/* Station divider */}
         <div className="flex items-center justify-center gap-4 mt-16">
