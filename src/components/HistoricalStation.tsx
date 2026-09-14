@@ -87,97 +87,83 @@ export default function HistoricalStation({ station }: HistoricalStationProps) {
           </p>
         </motion.div>
 
-        {/* Hero image — full width */}
-        {station.images.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="mb-10"
-          >
-            <div className="station-card p-3 md:p-4 overflow-hidden">
-              <ClickableImage
-                src={station.images[0].src}
-                alt={station.images[0].alt}
-                className="w-full rounded-sm overflow-hidden"
-                imgClassName="w-full h-auto max-h-[500px] md:max-h-[600px] object-cover rounded-sm"
-              />
-              <p className="text-xs md:text-sm text-sepia-light mt-3 text-center font-accent italic">
-                {station.images[0].alt}
-              </p>
-            </div>
+        {/* Main Content Layout (2 columns on lg) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-10">
+          
+          {/* LEFT COLUMN: Text Content */}
+          <div className="lg:col-span-7 space-y-8 order-2 lg:order-1">
+            {/* Historical data & Sources */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            >
+              <div className="station-card p-6 md:p-8 mb-6">
+                <h3 className="font-heading text-lg font-bold text-ink mb-4 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                  Dữ liệu lịch sử
+                </h3>
+                <ul className="space-y-4">
+                  {station.historicalData.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm md:text-base text-ink-light leading-relaxed">
+                      <span className="flex-shrink-0 w-2 h-2 bg-gold rounded-full mt-2" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <SourceReferences sources={station.sources} />
+            </motion.div>
 
-            {/* Additional images — larger grid */}
-            {station.images.length > 1 && (
-              <div className={`grid gap-4 mt-5 ${station.images.length - 1 >= 3 ? 'grid-cols-2 md:grid-cols-3' : station.images.length - 1 === 2 ? 'grid-cols-2' : 'grid-cols-1 max-w-lg mx-auto'}`}>
-                {station.images.slice(1).map((img, i) => (
-                  <div key={i} className="station-card p-2 md:p-3 overflow-hidden">
-                    <ClickableImage
-                      src={img.src}
-                      alt={img.alt}
-                      className="w-full rounded-sm overflow-hidden"
-                      imgClassName="w-full h-48 md:h-56 lg:h-64 object-cover rounded-sm"
-                    />
-                    <p className="text-xs text-sepia-light mt-2 text-center font-accent italic line-clamp-2">
-                      {img.alt}
-                    </p>
-                  </div>
+            {/* Theoretical analysis */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="station-card p-6 md:p-8 border-l-4 border-l-gold"
+            >
+              <h3 className="font-heading text-lg font-bold text-ink mb-4 flex items-center gap-2">
+                <svg className="w-5 h-5 text-sepia" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                Phân tích bản chất bước ngoặt lý luận
+              </h3>
+              <div className="space-y-4">
+                {station.analysis.map((paragraph, i) => (
+                  <p key={i} className="text-sm md:text-base text-ink-light leading-relaxed font-body">
+                    {paragraph}
+                  </p>
                 ))}
               </div>
-            )}
-          </motion.div>
-        )}
+            </motion.div>
+          </div>
 
-        {/* Historical data & Sources */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mb-12"
-        >
-          {/* Historical data */}
-          <div className="station-card p-6 md:p-8 mb-6">
-            <h3 className="font-heading text-lg font-bold text-ink mb-4 flex items-center gap-2">
-              <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-              Dữ liệu lịch sử
-            </h3>
-            <ul className="space-y-3">
-              {station.historicalData.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-sm md:text-base text-ink-light leading-relaxed">
-                  <span className="flex-shrink-0 w-2 h-2 bg-gold rounded-full mt-2" />
-                  <span>{item}</span>
-                </li>
+          {/* RIGHT COLUMN: Images */}
+          {station.images.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={isVisible ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="lg:col-span-5 space-y-6 order-1 lg:order-2"
+            >
+              {station.images.map((img, i) => (
+                <div key={i} className="station-card p-3 md:p-4 overflow-hidden">
+                  <ClickableImage
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full rounded-sm overflow-hidden"
+                    imgClassName="w-full h-auto max-h-[350px] object-cover rounded-sm"
+                  />
+                  <p className="text-xs md:text-sm text-sepia-light mt-3 text-center font-accent italic">
+                    {img.alt}
+                  </p>
+                </div>
               ))}
-            </ul>
-          </div>
-
-          {/* Source references */}
-          <SourceReferences sources={station.sources} />
-        </motion.div>
-
-        {/* Theoretical analysis */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="station-card p-6 md:p-8 mb-10 border-l-4 border-l-gold"
-        >
-          <h3 className="font-heading text-lg font-bold text-ink mb-4 flex items-center gap-2">
-            <svg className="w-5 h-5 text-sepia" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-            </svg>
-            Phân tích bản chất bước ngoặt lý luận
-          </h3>
-          <div className="space-y-4">
-            {station.analysis.map((paragraph, i) => (
-              <p key={i} className="text-sm md:text-base text-ink-light leading-relaxed font-body">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </motion.div>
+            </motion.div>
+          )}
+        </div>
 
         {/* Practical connection */}
         {station.practicalConnection && (

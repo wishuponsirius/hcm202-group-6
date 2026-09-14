@@ -33,9 +33,9 @@ export const stations: Station[] = [
     ],
     practicalConnection: 'Bài học về tư duy phản biện, dám bước ra khỏi lối mòn tư duy dành cho thế hệ trẻ ngày nay khi khởi nghiệp và đổi mới sáng tạo.',
     images: [
-      { src: '/images/ben-cang-nha-rong.webp', alt: 'Bến cảng Nhà Rồng' },
       { src: '/images/phan-boi-chau-phan-chu-trinh.jpg', alt: 'Phan Bội Châu và Phan Chu Trinh' },
       { src: '/images/mot-so-hoc-sinh-phong-trao-dong-du.jpg', alt: 'Một số học sinh phong trào Đông Du' },
+      { src: '/images/ben-cang-nha-rong.webp', alt: 'Bến cảng Nhà Rồng' },
     ],
     interactiveType: 'flip-cards',
   },
