@@ -26,7 +26,7 @@ export const stations: Station[] = [
       '**Hoạt động thực tiễn ban đầu:** Tham gia phong trào chống thuế Trung Kỳ (1908). Giảng dạy và gieo mầm lý tưởng yêu nước cho học trò tại Trường Dục Thanh, Phan Thiết (1910).',
       '**Bước ngoặt hướng đi mới:** Khâm phục tinh thần các bậc tiền bối (Phan Bội Châu, Phan Chu Trinh, Hoàng Hoa Thám) nhưng nhận thấy hạn chế trong con đường của họ. Quyết định sang phương Tây ngày 05/06/1911 để tìm hiểu nguồn gốc sức mạnh của đối phương và học hỏi phong trào tiến bộ quốc tế.'
     ],
-    sources: 'Trong bài báo "Nguyễn Tất Thành và hành trình lịch sử" (tác giả Vũ Trung Kiên, đăng trên Báo Đồng Nai điện tử ngày 04/06/2020)',
+    sources: 'Hồ Chí Minh Toàn Tập - Tập 2',
     analysis: [
       '"Tôi muốn ra nước ngoài, xem nước Pháp và các nước khác. Sau khi xem xét họ làm như thế nào, tôi sẽ trở về giúp đồng bào ta."'
     ],
