@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import DragDropGame from './DragDropGame';
 import DecisionGame from './DecisionGame';
-import MemoryGame from './MemoryGame';
+import MultipleChoiceGame from './MultipleChoiceGame';
 
 // ─── Stage definitions ────────────────────────────────────────────────────────
 interface Stage {
@@ -37,11 +37,11 @@ const stages: Stage[] = [
   {
     id: 2,
     label: 'Ải 3',
-    title: 'Lật Thẻ Ký Ức',
-    description: 'Ghép đúng 6 cặp sự kiện & ý nghĩa trong 60 giây.',
-    icon: '🃏',
+    title: 'Trắc Nghiệm',
+    description: 'Trả lời đúng 3 câu trắc nghiệm lịch sử.',
+    icon: '📝',
     mapX: '82%',
-    winHint: 'Ghép đủ 6 cặp trong 60s',
+    winHint: 'Trả lời đúng 3 câu',
   },
 ];
 
@@ -358,7 +358,7 @@ export default function GameHub() {
               <DecisionGame onWin={() => handleWin(1)} />
             )}
             {activeStage === 2 && (
-              <MemoryGame onWin={() => handleWin(2)} />
+              <MultipleChoiceGame onComplete={() => handleWin(2)} />
             )}
           </motion.div>
         )}
