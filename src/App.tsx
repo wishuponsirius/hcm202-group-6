@@ -62,7 +62,7 @@ export default function App() {
             Bài tập lớn môn HCM202 — Tư tưởng Hồ Chí Minh
           </p>
           <p className="text-xs text-parchment-dark/60">
-            © 2025 — Dự án học thuật sinh viên. Nội dung dựa trên nguồn tài liệu chính thống.
+            © 2026— AI1803-Group 6. Nội dung dựa trên nguồn tài liệu chính thống.
           </p>
         </div>
       </footer>
