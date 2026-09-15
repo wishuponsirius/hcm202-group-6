@@ -17,24 +17,23 @@ export const stations: Station[] = [
   {
     id: 'huong-di',
     number: 1,
-    title: 'BƯỚC NGOẶT HƯỚNG ĐI',
-    subtitle: 'VƯỢT THOÁT KHỎI LỐI MÒN CỦA CÁC TIỀN BỐI',
-    timePeriod: 'Trước ngày 5-6-1911',
-    theme: 'Hình thành tư tưởng yêu nước và có chí hướng tìm đường cứu nước mới',
+    title: 'MỐC 1: TRƯỚC NGÀY 05/06/1911',
+    subtitle: 'GIAI ĐOẠN KHỞI NGUỒN',
+    timePeriod: '1890 - 1911',
+    theme: 'Chủ đề: Hình thành tư tưởng yêu nước và chí hướng tìm đường cứu nước mới',
     historicalData: [
-      'Cội nguồn gia đình và quê hương: Nguyễn Tất Thành sinh ra tại Nghệ An – một vùng đất địa linh nhân kiệt giàu truyền thống yêu nước. Người chịu ảnh hưởng sâu sắc bởi tinh thần yêu nước, thương dân từ nhân cách của người cha (cụ Nguyễn Sinh Sắc) và tấm lòng nhân hậu, tần tảo của người mẹ (cụ Hoàng Thị Loan).',
-      'Hoạt động thực tiễn ban đầu: Người sớm bộc lộ tinh thần yêu nước khi tham gia phong trào chống thuế ở Trung Kỳ (1908) và truyền thụ lòng yêu nước, suy nghĩ về vận mệnh nước nhà cho học sinh khi dạy học tại Trường Dục Thanh, Phan Thiết (1910).',
-      'Bước ngoặt hướng đi mới: Trước sự thất bại của các phong trào yêu nước chống Pháp đương thời, Người rất khâm phục các vị tiền bối như Phan Bội Châu, Phan Chu Trinh, Hoàng Hoa Thám nhưng sáng suốt phê phán và không tán thành con đường cứu nước của họ. Người quyết định ra đi tìm đường cứu nước mới vào ngày 5-6-1911 với mong muốn tìm hiểu bản chất sức mạnh của kẻ thù và học hỏi kinh nghiệm cách mạng thế giới.',
+      '**Cội nguồn gia đình & quê hương:** Sinh ra tại vùng đất địa linh nhân kiệt Nghệ An. Thừa hưởng lòng yêu nước thương dân sâu sắc từ thân phụ (cụ Phó bảng Nguyễn Sinh Sắc) và đức tính nhân hậu, tần tảo của thân mẫu (cụ Hoàng Thị Loan).',
+      '**Hoạt động thực tiễn ban đầu:** Tham gia phong trào chống thuế Trung Kỳ (1908). Giảng dạy và gieo mầm lý tưởng yêu nước cho học trò tại Trường Dục Thanh, Phan Thiết (1910).',
+      '**Bước ngoặt hướng đi mới:** Khâm phục tinh thần các bậc tiền bối (Phan Bội Châu, Phan Chu Trinh, Hoàng Hoa Thám) nhưng nhận thấy hạn chế trong con đường của họ. Quyết định sang phương Tây ngày 05/06/1911 để tìm hiểu nguồn gốc sức mạnh của đối phương và học hỏi phong trào tiến bộ quốc tế.'
     ],
-    sources: 'Viện Lịch sử Đảng: Hồ Chí Minh – Biên niên tiểu sử, Tập 1, Nxb. Chính trị quốc gia Sự thật, Hà Nội, 2016, tr. 28–34; Hồ Chí Minh: Toàn tập, Tập 1, Nxb. Chính trị quốc gia Sự thật, Hà Nội, 2011.',
+    sources: 'Trong bài báo "Nguyễn Tất Thành và hành trình lịch sử" (tác giả Vũ Trung Kiên, đăng trên Báo Đồng Nai điện tử ngày 04/06/2020)',
     analysis: [
-      'Đây là bước đột phá về phương pháp luận nhận thức. Trước sự bế tắc của các phong trào cứu nước đương thời, Người khâm phục tinh thần xả thân của các bậc tiền bối nhưng tỉnh táo phê phán hạn chế của họ: Cầu viện Nhật Bản của cụ Phan Bội Châu là "đuổi hổ cửa trước, rước beo cửa sau"; dựa vào Pháp cải cách của cụ Phan Chu Trinh là "xin giặc rủ lòng thương"; phong trào Yên Thế của cụ Hoàng Hoa Thám tuy dũng cảm nhưng còn mang nặng "cốt cách phong kiến".',
-      'Quyết định sang phương Tây là sự lựa chọn duy vật biện chứng xuất phát từ thực tiễn: Muốn đánh bại kẻ thù thì phải đến tận hang ổ của chúng, tìm hiểu tận gốc bản chất của khẩu hiệu "Tự do - Bình đẳng - Bác ái" và học hỏi kinh nghiệm các cuộc cách mạng thế giới.',
+      '"Tôi muốn ra nước ngoài, xem nước Pháp và các nước khác. Sau khi xem xét họ làm như thế nào, tôi sẽ trở về giúp đồng bào ta."'
     ],
-    practicalConnection: 'Bài học về tư duy phản biện, dám bước ra khỏi lối mòn tư duy dành cho thế hệ trẻ ngày nay khi khởi nghiệp và đổi mới sáng tạo.',
+    practicalConnection: '',
     images: [
       { src: '/images/phan-boi-chau-phan-chu-trinh.jpg', alt: 'Phan Bội Châu và Phan Chu Trinh' },
-      { src: '/images/mot-so-hoc-sinh-phong-trao-dong-du.jpg', alt: 'Một số học sinh phong trào Đông Du' },
+      { src: '/images/mot-so-hoc-sinh-phong-trao-dong-du.jpg', alt: 'Học sinh phong trào Đông Du' },
       { src: '/images/ben-cang-nha-rong.webp', alt: 'Bến cảng Nhà Rồng' },
     ],
     interactiveType: 'flip-cards',
@@ -42,46 +41,44 @@ export const stations: Station[] = [
   {
     id: 'he-tu-tuong',
     number: 2,
-    title: 'BƯỚC NGOẶT HỆ TƯ TƯỞNG',
-    subtitle: 'BẾN ĐỖ CỦA CHÂN LÝ THỜI ĐẠI',
-    timePeriod: '6-6-1911 đến 30-12-1920',
-    theme: 'Hình thành tư tưởng cứu nước, giải phóng dân tộc theo con đường cách mạng vô sản',
+    title: 'MỐC 2: 06/06/1911 – 30/12/1920',
+    subtitle: 'BƯỚC NGOẶT THẾ GIỚI QUAN',
+    timePeriod: '1911 - 1920',
+    theme: 'Chủ đề: Tìm thấy con đường giải phóng dân tộc theo cách mạng vô sản',
     historicalData: [
-      'Khảo sát thực tiễn thế giới: Qua hành trình lao động, học tập ở nhiều nước tư bản và thuộc địa từ 1911 đến 1917, Người nhận thức rõ bản chất tội ác của chủ nghĩa thực dân và hình thành thế giới quan mới: nhân dân lao động các nước đều bị áp bức và là bạn của nhau, còn chủ nghĩa đế quốc, thực dân ở đâu cũng là kẻ thù.',
-      'Đấu tranh nghị trường: Năm 1919, Người gia nhập Đảng Xã hội Pháp và thay mặt những người Việt Nam yêu nước gửi bản Yêu sách của nhân dân An Nam tới Hội nghị Vécxây đòi các quyền tự do, dân chủ cơ bản cho dân tộc.',
-      'Bước ngoặt tư tưởng quyết định: Tháng 7-1920, Người đọc bản Sơ thảo lần thứ nhất những luận cương của Lênin về vấn đề dân tộc thuộc địa, từ đó tìm ra con đường giải phóng dân tộc duy nhất đúng đắn: con đường cách mạng vô sản. Tại Đại hội Tua (12-1920), Người bỏ phiếu tán thành Quốc tế Cộng sản, đồng sáng lập Đảng Cộng sản Pháp và trở thành người cộng sản Việt Nam đầu tiên, đánh dấu bước chuyển từ chủ nghĩa yêu nước sang lập trường cách mạng vô sản.',
+      '**Khảo sát thực tiễn hoàn cầu (1911 – 1917):** Bôn ba qua nhiều nước tư bản và thuộc địa, nhận rõ bản chất áp bức của chủ nghĩa thực dân. Xác định thế giới quan: Nhân dân lao động toàn cầu đều là anh em; chủ nghĩa thực dân, đế quốc ở đâu cũng là kẻ thù.',
+      '**Đấu tranh nghị trường quốc tế (1919):** Gia nhập Đảng Xã hội Pháp. Thay mặt Hội những người Việt Nam yêu nước gửi Bản Yêu sách của nhân dân An Nam tới Hội nghị Vécxây đòi quyền tự do, dân chủ bình đẳng.',
+      '**Tìm thấy chân lý cứu nước (1920):** Tháng 7/1920: Đọc Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và thuộc địa của V.I. Lênin – tìm ra con đường cứu nước duy nhất đúng đắn: Cách mạng vô sản. Tháng 12/1920: Tham dự Đại hội Tours, bỏ phiếu tán thành Quốc tế III, đồng sáng lập Đảng Cộng sản Pháp; trở thành người cộng sản Việt Nam đầu tiên.'
     ],
-    sources: 'V.I. Lênin: Toàn tập, Tập 41, Nxb. Tiến bộ, Mátxcơva, 1977, tr. 196–203; Hồ Chí Minh: "Con đường dẫn tôi đến chủ nghĩa Lênin", Hồ Chí Minh: Toàn tập, Tập 12, Nxb. Chính trị quốc gia Sự thật, Hà Nội, 2011, tr. 561–563.',
+    sources: '',
     analysis: [
-      'Đây là bước nhảy vọt về chất trong thế giới quan: Từ một người yêu nước giàu nhiệt huyết trở thành một chiến sĩ cộng sản quốc tế nắm vững vũ khí lý luận.',
-      'Người nhận thức rõ cuộc cách mạng tư sản Pháp, Mỹ chỉ là "cách mạng chưa đến nơi", thay thế hình thức bóc lột này bằng hình thức khác. Luận cương của Lênin đã chỉ ra con đường giải phóng duy nhất đúng đắn: Cách mạng giải phóng dân tộc ở thuộc địa phải gắn liền mật thiết với cách mạng vô sản quốc tế; độc lập dân tộc phải gắn liền với chủ nghĩa xã hội.',
+      'Đánh dấu bước chuyển biến quyết định: Từ một người yêu nước trở thành người chiến sĩ cộng sản.'
     ],
-    practicalConnection: 'Tư liệu số hóa tương tác: Bản scan số bài báo L\'Humanité tháng 7-1920 có thể phóng to xem bản dịch và bình chú học thuật.',
+    practicalConnection: '',
     images: [
-      { src: '/images/hcm-da-den-nhieu-noi-tren-the-gioi.gif', alt: 'Hành trình khảo sát thực tiễn thế giới' },
+      { src: '/images/hcm-da-den-nhieu-noi-tren-the-gioi.gif', alt: 'Hành trình khảo sát thực tiễn' },
       { src: '/images/ban-yeu-sach-cua-nguoi-dan-an-nam.jpg', alt: 'Bản Yêu sách của nhân dân An Nam' },
-      { src: '/images/chu-tich-tham-gia-dai-hoi-lan-thu-18.jpg', alt: 'Chủ tịch tham gia Đại hội Tours' },
+      { src: '/images/chu-tich-tham-gia-dai-hoi-lan-thu-18.jpg', alt: 'Đại hội Tours (1920)' },
     ],
     interactiveType: 'document-viewer',
   },
   {
     id: 'duong-loi',
     number: 3,
-    title: 'BƯỚC NGOẶT ĐƯỜNG LỐI & TỔ CHỨC',
-    subtitle: 'KHAI SINH HỆ THỐNG CƯƠNG LĨNH',
-    timePeriod: '31-12-1920 đến 3-2-1930',
-    theme: 'Hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam',
+    title: 'MỐC 3: 31/12/1920 – 03/02/1930',
+    subtitle: 'CHUẨN BỊ LÝ LUẬN & TỔ CHỨC',
+    timePeriod: '1920 - 1930',
+    theme: 'Chủ đề: Hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam',
     historicalData: [
-      'Truyền bá chủ nghĩa Mác-Lênin: Người tích cực viết báo (như tờ Le Paria sáng lập năm 1922) và xuất bản tác phẩm Bản án chế độ thực dân Pháp (1925) để thức tỉnh phong trào giải phóng dân tộc ở các nước thuộc địa.',
-      'Chuẩn bị về tổ chức và lý luận: Người thành lập tổ chức tiền thân của Đảng Cộng sản là Hội Việt Nam Cách mạng Thanh niên (tháng 6-1925) và ra báo Thanh niên. Năm 1927, Người xuất bản tác phẩm Đường Kách mệnh, vạch rõ các vấn đề cốt lõi về đường lối, lực lượng nòng cốt là liên minh công nông, và khẳng định cách mạng muốn thắng lợi trước hết phải có Đảng Cộng sản lãnh đạo.',
-      'Sáng lập Đảng và thông qua Cương lĩnh: Đầu năm 1930, Người chủ trì Hội nghị hợp nhất Đảng và trực tiếp khởi thảo Cương lĩnh chính trị đầu tiên của Đảng. Cương lĩnh vạch rõ phương hướng chiến lược: "làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản", "đánh đổ đế quốc Pháp, phong kiến An Nam và giai cấp tư sản phản cách mạng".',
+      '**Truyền bá chủ nghĩa Mác – Lênin:** Sáng lập báo Le Paria (Người cùng khổ - 1922) và xuất bản tác phẩm kinh điển Bản án chế độ thực dân Pháp (1925). Khơi dậy ý thức phản kháng và thức tỉnh tinh thần độc lập ở các nước thuộc địa.',
+      '**Chuẩn bị nền tảng tổ chức & kim chỉ nam lý luận:** Thành lập Hội Việt Nam Cách mạng Thanh niên (06/1925) và xuất bản báo Thanh niên. Tác phẩm Đường Kách mệnh (1927) định hình nguyên tắc: Cách mạng là sự nghiệp của quần chúng công - nông, và tiên quyết phải có Đảng Cộng sản vững mạnh dẫn đường.',
+      '**Thành lập Đảng & Cương lĩnh chính trị đầu tiên:** Đầu năm 1930: Chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Cửu Long (Hương Cảng). Trực tiếp khởi thảo Chánh cương vắn tắt, Sách lược vắn tắt: Vận dụng sáng tạo chủ nghĩa Mác – Lênin để giải quyết hài hòa bài toán Giai cấp – Dân tộc – Thời đại.'
     ],
-    sources: 'Hồ Chí Minh: Đường Kách mệnh, Hồ Chí Minh: Toàn tập, Tập 2, Nxb. Chính trị quốc gia Sự thật, Hà Nội, 2011, tr. 279–346; Đảng Cộng sản Việt Nam: Văn kiện Đảng Toàn tập, Tập 2, Nxb. Chính trị quốc gia, Hà Nội, 2002, tr. 1–6.',
+    sources: '',
     analysis: [
-      'Đây là bản cương lĩnh thể hiện sự vận dụng sáng tạo chủ nghĩa Mác-Lênin vào giải quyết đúng đắn mối quan hệ giai cấp – dân tộc – quốc tế. Người kết hợp chủ nghĩa Mác-Lênin không chỉ với phong trào công nhân mà còn với phong trào yêu nước Việt Nam.',
-      'Giải quyết khoa học mối quan hệ Giai cấp – Dân tộc: Cương lĩnh tháng 2-1930 xác định công nông là gốc của cách mạng, đồng thời chủ trương đoàn kết, liên hiệp với tiểu tư sản, trí thức, trung nông; tranh thủ hoặc trung lập tư sản dân tộc, phú nông, trung tiểu địa chủ. Đường lối này đặt quyền lợi tối cao của dân tộc lên trên hết, tránh biệt phái và cô lập lực lượng cách mạng.',
+      '"Cách mệnh trước hết phải có cái gì? Trước hết phải có Đảng cách mệnh, để trong thì vận động và tổ chức dân chúng, ngoài thì liên lạc với dân tộc bị áp bức và vô sản giai cấp mọi nơi." — (Đường Kách mệnh)'
     ],
-    practicalConnection: 'Sơ đồ mạng lưới lực lượng: Biểu đồ mạng tương tác thể hiện hạt nhân lãnh đạo của Đảng và vòng tròn liên minh toàn dân tộc theo Cương lĩnh 1930.',
+    practicalConnection: '',
     images: [
       { src: '/images/ban-an-che-do-thuc-dan-phap.jpg', alt: 'Bản án chế độ thực dân Pháp' },
       { src: '/images/duong-kach-menh.jpg', alt: 'Đường Kách mệnh' },
@@ -93,21 +90,20 @@ export const stations: Station[] = [
   {
     id: 'ban-linh',
     number: 4,
-    title: 'BƯỚC NGOẶT BẢN LĨNH',
-    subtitle: 'KIÊN TRÌ BẢO VỆ CHÂN LÝ THỰC TIỄN',
-    timePeriod: '4-2-1930 đến 28-1-1941',
-    theme: 'Vượt qua thử thách, giữ vững đường lối phương pháp cách mạng Việt Nam đúng đắn, sáng tạo',
+    title: 'MỐC 4: 04/02/1930 – 28/01/1941',
+    subtitle: 'KIÊN ĐỊNH BẢN LĨNH',
+    timePeriod: '1930 - 1941',
+    theme: 'Chủ đề: Vượt qua thử thách, kiên định giữ vững đường lối cách mạng đúng đắn, sáng tạo',
     historicalData: [
-      'Thử thách từ sự hiểu lầm: Do ảnh hưởng của khuynh hướng giáo điều, "tả" khuynh xuất hiện từ Đại hội VI của Quốc tế Cộng sản, tư tưởng đặt nhiệm vụ giải phóng dân tộc lên hàng đầu của Người trong Cương lĩnh 1930 bị phê phán sai lầm là "hữu khuynh", "dân tộc chủ nghĩa". Hội nghị Trung ương tháng 10-1930 đã ra án nghị quyết thủ tiêu chánh cương, sách lược này.',
-      'Kiên định bảo vệ chân lý: Sau khi thoát khỏi nhà tù Hồng Kông, Người trở lại Liên Xô học tập và nghiên cứu (1934–1938) dưới sự hiểu lầm và tình cảnh không được hoạt động thực tế. Người vẫn luôn giữ vững lập trường, tìm cách liên lạc để xin được trở về nước hoạt động cách mạng.',
-      'Trở về nước chỉ đạo chuyển hướng chiến lược: Tháng 1-1941, Người trở về nước trực tiếp chỉ đạo cách mạng. Tại Hội nghị Trung ương Đảng lần thứ 8 (tháng 5-1941) do Người chủ trì, Đảng quyết định đặt nhiệm vụ giải phóng dân tộc lên trên hết, tạm gác khẩu hiệu cách mạng điền địa và thành lập Mặt trận Việt Minh. Sự chuyển hướng chiến lược này thực chất là sự trở về hoàn toàn với quan điểm đúng đắn, sáng tạo trong Cương lĩnh chính trị đầu tiên năm 1930 của Người.',
+      '**Thử thách từ nhận thức giáo điều, "tả khuynh":** Tư tưởng ưu tiên độc lập dân tộc của Người bị phê phán là "hữu khuynh", "dân tộc chủ nghĩa" do tác động khuynh hướng tả khuynh từ Đại hội VI Quốc tế Cộng sản. Hội nghị Trung ương tháng 10/1930 thông qua nghị quyết thủ tiêu Chánh cương, Sách lược vắn tắt.',
+      '**Bản lĩnh kiên trì bảo vệ chân lý:** Vượt qua chuỗi ngày giam cầm tại Hồng Kông, trở lại Liên Xô học tập và nghiên cứu (1934 – 1938) trong điều kiện bị hạn chế hoạt động trực tiếp. Luôn bền bỉ giữ vững niềm tin, tìm mọi cơ hội để trở về Tổ quốc lãnh đạo đấu tranh.',
+      '**Trở về nước và chuyển hướng chiến lược lịch sử:** Ngày 28/01/1941, Người trở về Pác Bó sau 30 năm xa cách. Chủ trì Hội nghị Trung ương 8 (05/1941): Quyết định đặt quyền lợi giải phóng dân tộc lên trên hết, thành lập Mặt trận Việt Minh — hiện thực hóa trọn vẹn tinh thần Cương lĩnh năm 1930.'
     ],
-    sources: 'Đảng Cộng sản Việt Nam: Văn kiện Đảng Toàn tập, Tập 7 (1940–1945), Nxb. Chính trị quốc gia, Hà Nội, 2000, tr. 110–125; Hội đồng Trung ương biên soạn giáo trình quốc gia: Giáo trình Tư tưởng Hồ Chí Minh, Nxb. Chính trị quốc gia Sự thật, Hà Nội, 2021.',
+    sources: '',
     analysis: [
-      'Thể hiện bản lĩnh chính trị kiên cường và lòng trung thành tuyệt đối với chân lý khách quan. Dù chịu sức ép nặng nề từ tổ chức cấp trên, Người kiên quyết không rập khuôn máy móc lý luận đấu tranh giai cấp của phương Tây vào một xã hội thuộc địa.',
-      'Hội nghị Trung ương 8 (1941) quyết định đặt nhiệm vụ giải phóng dân tộc lên trên hết, tạm gác khẩu hiệu cách mạng điền địa, thành lập Mặt trận Việt Minh. Đây là sự trở về hoàn toàn và khẳng định tính đúng đắn, tất thắng của Cương lĩnh chính trị đầu tiên năm 1930.',
+      'Bản lĩnh kiên định bảo vệ đường lối độc lập dân tộc gắn liền với chủ nghĩa xã hội trước những quan điểm giáo điều, biệt phái.'
     ],
-    practicalConnection: 'Mô phỏng tranh luận (Debate Simulation): Người dùng đối chiếu giữa quan điểm "tả khuynh" rập khuôn sách vở và quan điểm biện chứng thực tiễn của Hồ Chí Minh.',
+    practicalConnection: '',
     images: [
       { src: '/images/nha-tu-victoria.jpg', alt: 'Nhà tù Victoria – Hồng Kông' },
       { src: '/images/bac-ho-tro-ve-nuoc-sau-30-nam.jpg', alt: 'Bác Hồ trở về nước sau 30 năm bôn ba' },
@@ -117,55 +113,24 @@ export const stations: Station[] = [
   {
     id: 'hien-thuc-hoa',
     number: 5,
-    title: 'BƯỚC NGOẶT HIỆN THỰC HÓA',
-    subtitle: 'ĐỘC LẬP TỰ DO & ĐỊNH HƯỚNG QUÁ ĐỘ',
-    timePeriod: '29-1-1941 đến 2-9-1969',
-    theme: 'Tư tưởng Hồ Chí Minh tiếp tục phát triển, soi đường cho sự nghiệp cách mạng của Đảng và nhân dân ta',
+    title: 'MỐC 5: 29/01/1941 – 02/09/1969',
+    subtitle: 'HOÀN THIỆN & ĐỈNH CAO THỰC TIỄN',
+    timePeriod: '1941 - 1969',
+    theme: 'Chủ đề: Tư tưởng Hồ Chí Minh tiếp tục phát triển, soi đường cho sự nghiệp cách mạng vẻ vang',
     historicalData: [
-      'Giành và bảo vệ chính quyền cách mạng: Người thành lập Mặt trận Việt Minh (1941), sáng lập Đội Việt Nam Tuyên truyền Giải phóng quân (1944) và lãnh đạo Cách mạng Tháng Tám năm 1945 thành công. Ngày 2-9-1945, Người đọc bản Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa. Trong giai đoạn hiểm nghèo "ngàn cân treo sợi tóc" (1945–1946), Người áp dụng xuất sắc phương châm "Dĩ bất biến ứng vạn biến" để bảo vệ chính quyền non trẻ.',
-      'Linh hồn kháng chiến chống Pháp (1946–1954): Người lãnh đạo toàn quốc kháng chiến với đường lối trường kỳ, toàn dân, toàn diện và tự lực cánh sinh, từng bước hoàn thiện lý luận cách mạng dân tộc dân chủ nhân dân.',
-      'Xây dựng CNXH và kháng chiến chống Mỹ (1954–1969): Người cùng Đảng lãnh đạo thực hiện đồng thời hai nhiệm vụ chiến lược ở hai miền và từng bước hình thành, hoàn thiện hệ thống quan điểm về chủ nghĩa xã hội cùng con đường quá độ lên chủ nghĩa xã hội ở nước ta. Năm 1966, Người nêu lên chân lý bất hủ của thời đại: "Không có gì quý hơn độc lập, tự do".',
-      'Di chúc lịch sử: Trước khi đi xa, Người để lại bản Di chúc – văn kiện lịch sử vô giá kết tinh tinh hoa trí tuệ, tâm hồn, đạo đức cách mạng, định hướng cho toàn Đảng, toàn dân tiếp tục đoàn kết đấu tranh đi đến thắng lợi hoàn toàn.',
+      '**Giành và bảo vệ chính quyền (1941 – 1946):** Lập Đội Việt Nam Tuyên truyền Giải phóng quân (1944), lãnh đạo thắng lợi Cách mạng Tháng Tám năm 1945. Đọc Tuyên ngôn Độc lập (02/09/1945); vận dụng nhuần nhuyễn phương châm "Dĩ bất biến, ứng vạn biến" vượt qua giai đoạn "ngàn cân treo sợi tóc".',
+      '**Kháng chiến chống thực dân Pháp (1946 – 1954):** Lãnh đạo đường lối toàn dân, toàn diện, trường kỳ, tự lực cánh sinh; làm nên chiến thắng Điện Biên Phủ "lừng lẫy năm châu, chấn động địa cầu".',
+      '**Xây dựng CNXH ở miền Bắc & Giải phóng miền Nam (1954 – 1969):** Hoàn thiện lý luận về con đường quá độ lên CNXH phù hợp đặc thù Việt Nam. Năm 1966, đúc kết chân lý thời đại: "Không có gì quý hơn độc lập, tự do".',
+      '**Bản Di chúc lịch sử:** Kết tinh trí tuệ, tình cảm và đạo đức cách mạng mẫu mực; để lại lời dặn dò thiêng liêng về tinh thần đoàn kết, xây dựng Đảng và tương lai đất nước.'
     ],
-    sources: 'Hồ Chí Minh: Toàn tập, Tập 4, Tập 14, Tập 15, Nxb. Chính trị quốc gia Sự thật, Hà Nội, 2011; Di chúc của Chủ tịch Hồ Chí Minh, Nxb. Chính trị quốc gia Sự thật, Hà Nội, 2019.',
+    sources: 'Chủ tịch Hồ Chí Minh (Lời kêu gọi đồng bào và chiến sĩ cả nước, 17/7/1966)',
     analysis: [
-      'Hoàn thiện lý luận về nhà nước của dân, do dân, vì dân và nghệ thuật chỉ đạo chiến lược: Độc lập chủ quyền là nguyên tắc bất di bất dịch (bất biến), nhưng sách lược ngoại giao, sự nhân nhượng và thỏa hiệp có thời điểm thì luôn linh hoạt, mềm dẻo (vạn biến).',
+      '"Không có gì quý hơn độc lập, tự do!"'
     ],
-    practicalConnection: 'Bài học "Dĩ bất biến, ứng vạn biến" là cội nguồn của trường phái "Ngoại giao Cây tre Việt Nam" hiện nay: Vững gốc (độc lập, tự chủ, lợi ích quốc gia – dân tộc), chắc thân (bản lĩnh kiên cường), uyển chuyển cành (linh hoạt, đa phương hóa, đa dạng hóa).',
+    practicalConnection: '',
     images: [
       { src: '/images/the-dang-vien-cua-chu-tich.jpg', alt: 'Thẻ đảng viên của Chủ tịch Hồ Chí Minh' },
     ],
     interactiveType: 'aspiration-wall',
-  },
-];
-
-export interface FlipCardItem {
-  name: string;
-  approach: string;
-  limitation: string;
-  isHighlighted?: boolean;
-}
-
-export const flipCardData: FlipCardItem[] = [
-  {
-    name: 'Phan Bội Châu',
-    approach: 'Cầu viện Nhật Bản – Phong trào Đông Du',
-    limitation: '"Đuổi hổ cửa trước, rước beo cửa sau"',
-  },
-  {
-    name: 'Phan Chu Trinh',
-    approach: 'Dựa vào Pháp cải cách – Phong trào Duy Tân',
-    limitation: '"Xin giặc rủ lòng thương"',
-  },
-  {
-    name: 'Hoàng Hoa Thám',
-    approach: 'Khởi nghĩa vũ trang Yên Thế',
-    limitation: 'Còn mang nặng "cốt cách phong kiến"',
-  },
-  {
-    name: 'Nguyễn Tất Thành',
-    approach: 'Sang phương Tây tìm hiểu nguồn gốc sức mạnh kẻ thù và học hỏi kinh nghiệm cách mạng thế giới',
-    limitation: '',
-    isHighlighted: true,
   },
 ];

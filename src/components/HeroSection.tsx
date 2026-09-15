@@ -57,11 +57,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-ink tracking-wide text-shadow-vintage leading-tight"
+          className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-ink tracking-wide text-shadow-vintage leading-tight"
         >
-          HÀNH TRÌNH TƯ TƯỞNG
+          HÀNH TRÌNH TƯ TƯỞNG HỒ CHÍ MINH
           <br />
-          <span className="text-sepia">QUA CÁC BƯỚC NGOẶT LỊCH SỬ</span>
+          <span className="text-sepia text-3xl md:text-4xl lg:text-5xl block mt-2">ÁNH SÁNG SOI ĐƯỜNG CÁCH MẠNG VIỆT NAM</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -71,7 +71,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-accent text-lg md:text-xl text-ink-light mt-6 italic max-w-3xl mx-auto"
         >
-          Khám phá 5 bước ngoặt làm thay đổi căn bản nhận thức và quyết định con đường cứu nước của Chủ tịch Hồ Chí Minh
+          Khám phá 5 giai đoạn lịch sử hình thành, tôi luyện và hoàn thiện tư tưởng vĩ đại của Chủ tịch Hồ Chí Minh (HCM202 - Nhóm 6).
         </motion.p>
 
         {/* Decorative divider */}

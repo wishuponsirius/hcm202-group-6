@@ -80,15 +80,26 @@ export default function HistoricalStation({ station }: HistoricalStationProps) {
                   <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
-                  Dữ liệu lịch sử
+                  Nội dung trọng tâm
                 </h3>
                 <ul className="space-y-4">
-                  {station.historicalData.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm md:text-base text-ink-light leading-relaxed">
-                      <span className="flex-shrink-0 w-2 h-2 bg-gold rounded-full mt-2" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
+                  {station.historicalData.map((item, i) => {
+                    const parts = item.split(/(\*\*.*?\*\*)/g);
+                    return (
+                      <li key={i} className="flex items-start gap-3 text-sm md:text-base text-ink-light leading-relaxed">
+                        <span className="flex-shrink-0 w-2 h-2 bg-gold rounded-full mt-2" />
+                        <span>
+                          {parts.map((part, j) => 
+                            part.startsWith('**') && part.endsWith('**') ? (
+                              <strong key={j} className="font-bold text-ink">{part.slice(2, -2)}</strong>
+                            ) : (
+                              <span key={j}>{part}</span>
+                            )
+                          )}
+                        </span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </motion.div>
@@ -104,15 +115,26 @@ export default function HistoricalStation({ station }: HistoricalStationProps) {
                 <svg className="w-5 h-5 text-sepia" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
-                Phân tích bản chất bước ngoặt lý luận
+                Điểm nhấn lịch sử
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-4 relative z-10">
                 {station.analysis.map((paragraph, i) => (
-                  <p key={i} className="text-sm md:text-base text-ink-light leading-relaxed font-body">
-                    {paragraph}
+                  <p key={i} className="text-sm md:text-base text-ink-light leading-relaxed font-body italic font-medium relative">
+                    <span className="absolute -top-3 -left-2 text-4xl text-gold/20 font-serif leading-none">"</span>
+                    <span className="relative z-10">{paragraph.replace(/^["']|["']$/g, '')}</span>
+                    <span className="absolute -bottom-4 -right-2 text-4xl text-gold/20 font-serif leading-none">"</span>
                   </p>
                 ))}
               </div>
+              
+              {/* Source for the quote if available */}
+              {station.sources && (
+                <div className="mt-4 text-right">
+                  <span className="text-xs md:text-sm text-sepia-light/80 font-accent italic">
+                    — {station.sources}
+                  </span>
+                </div>
+              )}
             </motion.div>
           </div>
 
