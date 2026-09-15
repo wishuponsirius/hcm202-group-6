@@ -59,7 +59,7 @@ export default function App() {
             Hành trình tư tưởng qua các bước ngoặt lịch sử
           </h3>
           <p className="font-accent text-sm text-parchment-dark italic mb-4">
-            Bài tập lớn môn HCM202 — Tư tưởng Hồ Chí Minh
+            HCM202 Assignment — Tư tưởng Hồ Chí Minh
           </p>
           <p className="text-xs text-parchment-dark/60">
             © 2026— AI1803-Group 6. Nội dung dựa trên nguồn tài liệu chính thống.
