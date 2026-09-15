@@ -121,7 +121,7 @@ export default function HistoricalStation({ station }: HistoricalStationProps) {
                 {station.analysis.map((paragraph, i) => (
                   <p key={i} className="text-sm md:text-base text-ink-light leading-relaxed font-body italic font-medium relative">
                     <span className="absolute -top-3 -left-2 text-4xl text-gold/20 font-serif leading-none">"</span>
-                    <span className="relative z-10">{paragraph.replace(/^["']|["']$/g, '')}</span>
+                    <span className="relative z-10">{paragraph}</span>
                     <span className="absolute -bottom-4 -right-2 text-4xl text-gold/20 font-serif leading-none">"</span>
                   </p>
                 ))}
